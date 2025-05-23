@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../css/FlippingCards.css'; // We'll create this CSS file next
 
 const FlippingCards = () => {

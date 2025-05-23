@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import '../css/RegistrationForm.css';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
 import Footer from './Footer';
 import Lottie from 'lottie-react';
 import namasteAnimation from '../assets/images/namaste_animation.json';
@@ -39,7 +38,6 @@ const [showSuccessModal, setShowSuccessModal] = useState(false);
     'Bare Space',
   ];
 
-  const navigate = useNavigate();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;

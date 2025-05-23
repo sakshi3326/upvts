@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../css/Landing.css";
 import logo from "../../src/assets/upvts_logo.png"; // Update this path
-import leftPerson from "../../src/assets/pm_image.png"; // Update path
 import rightPerson from "../../src/assets/cm_image.png"; // Update path
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import { Routes, Route } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import FlippingCards from "./FlippingCards";
 import border from "../assets/images/border.jpg";
