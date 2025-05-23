@@ -1,0 +1,134 @@
+html, body {
+  background-color: #1a948d;
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  min-height: 1000px;
+  overflow: hidden;
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-shadow: -1px -1px 4px rgba(0, 0, 0, .35);
+}
+
+header {
+  margin-top: 30px;
+  position: absolute;
+  z-index: 5;
+  width: 420px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: -2.5px;
+  margin-left: 30px;
+}
+
+h3 {
+  font-size: 16px;
+  letter-spacing: -1.5px;
+  margin-top: 5px;
+  margin-left: 35px;
+}
+
+#fps {
+  margin-top: 5px;
+  margin-left: 35px;
+}
+
+a {
+  color: rgba(255, 255, 255, .65);
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* 3D Styles */
+.trans3d {
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 0);
+}
+
+#contentContainer, #carouselContainer {
+  position: absolute;
+  margin-left: -500px;
+  margin-top: -500px;
+  left: 50%;
+  top: 50%;
+  width: 1000px;
+  height: 1000px;
+}
+
+.carouselItem {
+  width: 320px;
+  height: 130px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -160px;
+  margin-top: -90px;
+  visibility: hidden;
+}
+
+.carouselItemInner {
+  width: 320px;
+  height: 130px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, .75);
+  border: 10px solid rgba(255, 255, 255, .5);
+  color: aqua;
+  font-size: 72px;
+  left: 50%;
+  top: 50%;
+  margin-left: -160px;
+  margin-top: -90px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.pagination-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 10px;
+  z-index: 10;
+}
+
+.pagination button {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border: none;
+  background-color: #eee;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #ccc;
+  transform: scale(1.05);
+}
+
+.pagination button.active {
+  background-color: #333;
+  color: white;
+}

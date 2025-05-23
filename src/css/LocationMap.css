@@ -1,0 +1,132 @@
+.location-container {
+  width: 100vw;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+.location-heading {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  position: relative;
+}
+
+.location-heading::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #e67e22, #e74c3c);
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+.location-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.map-container {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.location-details {
+  flex: 1;
+  min-width: 300px;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.location-details h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.address {
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.direction-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.direction-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.direction-btn:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.apple-maps {
+  background: #000;
+}
+
+.apple-maps:hover {
+  background: #333;
+}
+
+.transportation-info {
+  margin-top: 2rem;
+}
+
+.transportation-info h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.transportation-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.transportation-info li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.transportation-info li::before {
+  content: '•';
+  color: #e67e22;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -0.2rem;
+}
+
+@media (max-width: 768px) {
+  .location-content {
+    flex-direction: column;
+  }
+  
+  .map-container, .location-details {
+    min-width: 100%;
+  }
+}
